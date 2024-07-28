@@ -1,3 +1,5 @@
+package String;
+
 public class Duplicate1 {
     public static void main(String[] args) {
         int a[] = {1, 6, 9, 2, 4, 8,4};

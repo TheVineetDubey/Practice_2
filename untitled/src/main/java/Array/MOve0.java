@@ -1,3 +1,5 @@
+package Array;
+
 public class MOve0 {
     public static void main(String[] args)
     {

@@ -1,3 +1,5 @@
+package Array;
+
 public class MIssingNUmberArray {
     public static void main(String[] args) {
         int a[]={1,2,6,7,8,9,5,6};

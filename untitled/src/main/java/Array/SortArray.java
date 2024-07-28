@@ -1,3 +1,5 @@
+package Array;
+
 public class SortArray {
     public static void main(String[] args) {
         int[] a={15,25,85,96,33,44,50};
