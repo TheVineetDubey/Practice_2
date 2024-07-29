@@ -1,3 +1,5 @@
+package String;
+
 public class StringP {
     public static void main(String[] args) {
         String x="java";

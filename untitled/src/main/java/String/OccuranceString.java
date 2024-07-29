@@ -1,3 +1,5 @@
+package String;
+
 public class OccuranceString {
     public static void main(String[] args) {
         String s="Java is Pathetic";

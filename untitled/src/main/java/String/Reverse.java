@@ -1,3 +1,4 @@
+package String;
 
 public class Reverse {
     public static void main(String[] args) {
@@ -11,7 +12,7 @@ public class Reverse {
             reverse = reverse * 10 + n % 10;
             n = n / 10;
         }
-        System.out.println("Reverse of entered number is " + reverse);
+        System.out.println("String.Reverse of entered number is " + reverse);
 
         if (n == reverse)
             System.out.println("palindorme");
