@@ -3,8 +3,7 @@ package Array;
 public class SecondLargest {
     public static void main(String[] args) {
         int[] a = {1, 5, 6, 8, 9, 7, 4, 5, 6};
-        int max = 0;
-        int second = 0;
+        int second = a.length-1;
         int temp = 0;
 
         for (int i = 0; i < a.length; i++) {
@@ -18,8 +17,8 @@ public class SecondLargest {
             }
 
         }
-        for (int i = 0; i < a.length; i++) {
-            System.out.println(a[i]);
+        System.out.println(java.util.Arrays.toString(a));
+            System.out.println(second);
         }
     }
-}
+

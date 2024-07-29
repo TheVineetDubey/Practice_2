@@ -2,7 +2,7 @@ package Array;
 
 public class MaxMinArray {
     public static void main(String[] args) {
-        int a[]={1,2,5,6,99,9};
+        int a[]={0,2,105,6,99,9};
 
         int max=a[0];  // assume first vale as max
         int min=a[0];
@@ -12,7 +12,7 @@ public class MaxMinArray {
             {
                 max=a[i];
             }
-                     //will start from index 1
+
             else if(a[i]<min)
             {
                 min=a[i];
