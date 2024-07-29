@@ -1,3 +1,5 @@
+package Array;
+
 public class SearchinArray {
     public static void main(String[] args) {
         int a[] = {1, 6, 9, 10, 4, 8};
