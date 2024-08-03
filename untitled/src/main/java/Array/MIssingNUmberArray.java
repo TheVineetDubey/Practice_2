@@ -22,3 +22,4 @@ public class MIssingNUmberArray {
         System.out.println("missng numer " +(sum1-sum2));
     }
 }
+

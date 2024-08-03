@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class TwoarrayComp {
     public static void main(String[] args) {
         int a1[]={1,2,4,5,7,8};
-        int a2[]={1,2,4,5,7,8};
+        int a2[]={1,2,4,5,7,9};
 //app-1
         //boolean status=Arrays.equals(a1,a2);
 

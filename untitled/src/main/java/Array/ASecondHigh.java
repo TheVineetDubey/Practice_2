@@ -1,6 +1,6 @@
 package Array;
 
-public class SecondLargest {
+public class ASecondHigh {
     public static void main(String[] args) {
         int[] a = {23, -16, 35, 45, 30, 10, 36, 11};
         int temp=0;
@@ -17,7 +17,8 @@ public class SecondLargest {
 
         }
         System.out.println(java.util.Arrays.toString(a));
-        System.out.println(a[1]);
+            System.out.println(a[1]);
+        }
     }
-}
+
 
