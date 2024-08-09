@@ -23,12 +23,15 @@
         <version>5.5.0</version>
         <scope>test</scope>
     </dependency>
+<<<<<<< HEAD
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.13.2</version>
             <scope>test</scope>
         </dependency>
+=======
+>>>>>>> origin/main
     </dependencies>
 
 </project>
