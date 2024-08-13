@@ -51,11 +51,11 @@ public class Student {
         }
 
     public static void main(String[] args) {
-<<<<<<< HEAD
+
         Student student = new Student("Vineet", 85, 90, 88);
-=======
-        Student student = new Student("John Doe", 85, 90, 88);
->>>>>>> origin/main
+
+
+
         student.details();
     }
 }
