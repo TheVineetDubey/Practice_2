@@ -1,52 +1,61 @@
 package CoreJava;
 
-import java.util.ArrayList;
-
 public class Student {
+        String name;
+        int marks1;
+        int marks2;
+        int marks3;
 
-    private int studentId;
-    private int age;
-    private String name;
-    private String gradelevel;
-    private ArrayList<Integer>grades;
+        public Student(String name,int marks1,int marks2,int marks3){
+            this.name=name;
+            this.marks1=marks1;
+            this.marks2=marks2;
+            this.marks3=marks3;
+        }
+        public int total(){
+            return marks1+marks2+marks3;
+        }
+        public double percent(){
+            return (total()/3.0);
+        }
 
-    public Student(int studentId, int age, String name, String gradelevel) {
-        this.studentId = studentId;
-        this.age = age;
-        this.name = name;
-        this.gradelevel = gradelevel;
-        this.grades = new ArrayList<>();
-    }
+        public String grade(){
+            double percentage=percent();
+            if(percentage>90) {
+                return "A+";
+            }
+            if(percentage>80) {
+                return "A";
+            }
+            if(percentage>70) {
+                return "B+";
+            }
+            if(percentage>60) {
+                return "B";
+            }
+            if(percentage>50) {
+                return "C";
+            }
+            else {
+                return "D";
+            }
+        }
+    public void details(){
+            System.out.println("Name "+ name);
+            System.out.println("Subject 1:: "+marks1);
+            System.out.println("Subject 2:: "+marks2);
+            System.out.println("Subject 3:: "+marks3);
+            System.out.println("total:: "+total());
+            System.out.println("Percentage:: "+percent()+"%");
+            System.out.println("Grade:: "+grade() );
+        }
 
-  public void addGrade(int grade){
-        grades.add(grade);
-    }
-    public double calculateAverage() {
-        int i = 0;
-        int sum = 0;
+    public static void main(String[] args) {
+
+        Student student = new Student("Vineet", 85, 90, 88);
 
 
 
-       while(i<grades.size()){
-           sum=sum+grades.get(i);
-           i++;
-       }
-       return (double) sum/grades.size();
-    }
-    public String getDetails(){
-       return ("student id "+studentId+"  age "+age+"  name "+ name+"  gradelevel "+gradelevel+"  grades  "+grades+"  Average "+calculateAverage());
-
-    }
-
-    public static void main(String[] args){
-       Student student=new Student(007,36,"Rio","Freshman");
-       student.addGrade(85);
-       student.addGrade(20);
-       student.addGrade(75);
-
-        System.out.println(student.getDetails());
+        student.details();
     }
 }
-
-
-
