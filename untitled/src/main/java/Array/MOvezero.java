@@ -14,6 +14,7 @@ public class MOvezero {
             }
 
 
+
         }
         while (count<n){
             a[count++]=0;

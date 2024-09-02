@@ -1,12 +1,9 @@
 package CoreJava;
 
-
-import javafx.scene.effect.SepiaTone;
-
-import java.util.*;
-
-import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+import java.util.Set;
+import java.util.TreeSet;
 
 
 public class Fruits {

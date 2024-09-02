@@ -3,7 +3,7 @@ package Array;
 public class SearchinArray {
     public static void main(String[] args) {
         int a[] = {1, 6, 9, 10, 4, 8};
-        int n = 2;
+        int n = 6;
         boolean fl = false;
 
         for (int i = 0; i < a.length; i++) {

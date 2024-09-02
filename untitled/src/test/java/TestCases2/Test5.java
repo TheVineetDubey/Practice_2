@@ -2,12 +2,7 @@ package TestCases2;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.time.Duration;
 
 public class Test5 {
 
@@ -18,8 +13,8 @@ public class Test5 {
 
         driver.findElement(By.xpath("//button[text()='Start']")).click();
 
-        WebDriverWait wait =new WebDriverWait(driver, Duration.ofSeconds(10));
-        WebElement Message = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("finish")));
+        //WebDriverWait wait =new WebDriverWait(driver, 10);
+       // WebElement Message = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("finish")));
 
         String msg=driver.findElement(By.xpath("//div[@id='finish']//h4")).getText();
         System.out.println(msg);

@@ -4,7 +4,6 @@ public class ASecondHigh {
     public static void main(String[] args) {
         int[] a = {23, -16, 35, 45, 30, 10, 36, 11};
         int temp=0;
-        int second = a[a.length-2];
 
         for (int i = 0; i < a.length; i++) {
             for (int j = i + 1; j < a.length; j++) {

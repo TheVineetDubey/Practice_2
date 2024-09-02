@@ -7,10 +7,12 @@ public class Duplicate1 {
             for (int j = i + 1; j < a.length; j++) {
 
                 if (a[i] == a[j]) {
-                    System.out.println(a[i]);
+
                 }
             }
+            System.out.println(a[i]);
         }
+
     }
 }
 

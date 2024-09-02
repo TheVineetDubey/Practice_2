@@ -29,8 +29,8 @@ public class Course {
     }
     public static void main(String[] args){
         Course course=new Course("Freshman","Professor");
-        Student student1=new Student(101,45,"Peter","Freshman");
-        Student student2=new Student(102,45,"Quil","Freshman");
+        Student student1=new Student("101",45,50,15);
+        Student student2=new Student("102",45,50,35);
         course.removeStudent(20);
 
 

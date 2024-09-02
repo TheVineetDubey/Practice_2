@@ -3,11 +3,9 @@ package TestCases2;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.File;
 import java.io.IOException;
-import java.time.Duration;
 
 
 public class Test1 {
@@ -28,7 +26,7 @@ public class Test1 {
 
         driver.findElement(By.xpath("//i[@class='fa fa-angle-up']")).click();
 
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(100));
+        //WebDriverWait wait = new WebDriverWait(driver, (100));
 
 
         TakesScreenshot scrShot1 =((TakesScreenshot) driver);
