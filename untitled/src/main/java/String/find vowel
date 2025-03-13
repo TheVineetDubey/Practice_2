@@ -1,0 +1,11 @@
+public class VowelCheck {
+    public static void main(String[] args) {
+        String str = "Hello";
+
+        if (str.matches(".*[aeiouAEIOU].*")) {
+            System.out.println("The string contains a vowel.");
+        } else {
+            System.out.println("No vowels found in the string.");
+        }
+    }
+}
