@@ -1,0 +1,17 @@
+import java.util.*;
+
+public class RemoveDuplicates {
+    public static void main(String[] args) {
+        int[] input = {4, 2, 9, 4, 2, 8,2,2,2,2,2,5};
+        System.out.println(Arrays.toString(removeDuplicates(input)));  // Output: [4, 2, 9, 8]
+    }
+
+    static int[] removeDuplicates(int[] nums) {
+        Set<Integer> uniqueSet = new LinkedHashSet<>();
+        for (int num : nums) {
+            uniqueSet.add(num);  // Adds elements, maintaining order
+        }
+        
+        return uniqueSet.stream().mapToInt(Integer::intValue).toArray();  // Converts set to array
+    }
+}
