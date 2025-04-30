@@ -1,0 +1,15 @@
+public class SwapCase {
+    public static void main(String[] args) {
+        String input = "HeLLo WoRLD";
+       
+        String result = "";
+
+        for (char c : input.toCharArray()) {
+            if (Character.isUpperCase(c)) {
+                result += Character.toLowerCase(c);
+            } else
+                result += Character.toUpperCase(c);
+            }
+        System.out.println(result);
+    }
+}
